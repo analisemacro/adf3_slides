@@ -1,0 +1,114 @@
+---
+title: "Coletando e analisando dados da DRE"
+subtitle: "Análise de Demonstrativos Financeiros"
+author: 'Luiz Henrique'
+output:
+   xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation: 
+        scroll: false
+params:
+  logo_slides: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.PNG"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning   = FALSE,  # exibir avisos do console?
+  message   = FALSE,  # exibir mensagens do console?
+  dpi       = 300,    # resolução
+  fig.align = "center"# alinhamento de imagens
+  )
+```
+
+
+```{css, echo=FALSE}
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+```
+
+## Demonstração de resultado de exercício
+
+A **Demonstração de Resultados do Exercício (DRE)** fornece os resultados da empresa no período, representados pelo **lucro ou prejuízo**, estes transferidos para as contas do **patrimônio líquido**.
+
+ - **Lucro (ou prejuízo)**: resultante de **receitas, custos e despesas** incorridos pela empresa no período seguindo o regime de competência (não importando se tenham sido esses valores pagos ou recebidos).
+ 
+---
+## Demonstração de resultado de exercício
+### Estrutura da demonstração do resultado
+
+Uma estrutura padrão baseada na legislação vigente e normalmente adotada pelas empresas é apresentada no quadro ao lado.
+
+.panel.right
+
+| Estrutura da demonstração do resultado de acordo com a Lei das S.A |
+|------|
+|  RECEITA BRUTA DE VENDAS E/OU SERVIÇOS    |
+| (-)  Descontos Concedidos, Devoluções   |
+|  (–) Impostos sobre vendas    |
+|  = RECEITA LÍQUIDA    |
+|  (–) Custo dos Produtos Vendidos e/ou Serviços Prestados    |
+|  = RESULTADO BRUTO    |
+| (–) Despesas/Receitas Operacionais e Financeiras    |
+|   = RESULTADO ANTES DO IR/CSLL   |
+|   (–) Provisão para IR e Contribuição Social   |
+|  = RESULTADO LÍQUIDO ANTES DE PARTICIPAÇÕES E CONTRIBUIÇÕES    |
+|   (–) Participações   |
+|   (–) Contribuições   |
+|    = RESULTADO (LUCRO/PREJUÍZO) LÍQUIDO DO EXERCÍCIO  |
+
+---
+## Demonstração de resultado de exercício
+### Estrutura da demonstração do resultado
+
+**Receita bruta e líquida de vendas e/ou serviços**:  valor nominal total das vendas de bens ou dos serviços prestados pela empresa, no exercício social considerado, antes de qualquer dedução;
+
+**Receita líquida de vendas e serviços**: receita bruto deduzidos diversos valores que efetivamente não pertencem à empresa, tais como impostos indiretos (ICMS, IPI etc.), descontos e abatimentos, devoluções de mercadorias etc;
+
+**Custo dos Produtos Vendidos e/ou Serviços Prestados**: Representam todos os custos incorridos pela empresa em seu processo de fabricação, venda ou prestação de
+serviços.
+
+  - Empresas Industriais: “Custo do Produto Vendido (CPV)”.
+  - Empresas Comerciais: “Custo da Mercadoria Vendida (CMV)”.
+  - Empresas Prestadoras de Serviços: “Custo dos Serviços Prestados”.
+  
+---
+## Demonstração de resultado de exercício
+### Estrutura da demonstração do resultado
+
+**Lucro Bruto**: é apurado pela **diferença** entre as **Receitas Líquidas de Venda e o Custo dos Produtos/Mercadorias Vendidas/Serviços**.
+
+O montante apurado do lucro bruto destina-se a cobrir as **despesas operacionais, despesas financeiras, despesas de impostos (imposto de renda)**, e **remunerar** os proprietários da empresa através da **geração de lucro líquido**.
+
+---
+## Demonstração de resultado de exercício
+### Estrutura da demonstração do resultado
+
+**Despesas de vendas, administrativas e financeiras líquidas**: as empresas incorrem também em determinadas despesas oriundas da promoção, distribuição e venda de seus produtos ou mercadorias, e da gestão (administração) de seus negócio, são as despesas operacionais
+
+**Lucro Líquido**: é o valor final que resta, colocado à disposição dos proprietários (sócios ou acionistas) da empresa. Pode ser entendido como a remuneração oferecida no exercício do capital próprio investido na empresa.
+
+**Lucro Líquido final**: é calculado deduzindo-se do lucro líquido após o Imposto de Renda, as diversas participações e contribuições previstas no estatuto da companhia.
+
+Exemplos de Participações e Contribuições: participações no lucro de credores por debêntures (títulos de longo prazo emitidos pelas companhias abertas para levantar empréstimos no mercado), de empregados e administradores, contribuições para Fundos de Previdência de Empregados etc.
+
+Uma parcela do lucro líquido final é retida (reinvestida) na empresa, e a outra parte é distribuída aos acionistas (dividendos).
+
+---
+
+## Referências
+
+Neto, A. A. *Estruturas e Análise de Balanços - Um Enfoque Economico* - Financeiro, 12 ed. Atlas, 2020.
